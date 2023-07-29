@@ -112,6 +112,7 @@ h6 {
 
 /* General styles for the slider */
 /* General styles for the slider */
+/* General styles for the slider */
 .slider {
     display: table;
     width: 100%;
@@ -242,6 +243,14 @@ h6 {
 
 /* Media query for mobile devices */
 @media (max-width: 767px) {
+    .desktop-slider {
+        display: none; /* Hide the desktop slider on mobile */
+    }
+
+    .mobile-slider {
+        display: block; /* Show the mobile slider on mobile */
+    }
+
     .slider .carousel-item {
         height: auto; /* Remove fixed height for mobile */
         background-size: cover; /* Reset background-size to cover for mobile devices */
@@ -266,8 +275,6 @@ h6 {
         width: 15%;
     }
 }
-
-
 
 
 /* ------------------ Menu Style ------------------- */
