@@ -242,13 +242,7 @@ h6 {
 /* Media query for mobile devices */
 @media (max-width: 767px) {
     .slider .carousel-item {
-        height: 100%;
-        background-size: contain;
-        background-position: top; /* Adjust background position for better visibility */
-    }
-
-    .slider .carousel-content {
-        padding: 20px; /* Add some padding to the content to prevent it from being too close to the edges */
+        background-size: cover; /* Reset background-size to cover for mobile devices */
     }
 
     .slider h2 {
@@ -257,7 +251,7 @@ h6 {
     }
 
     .slider p {
-        width: 100%;
+        width: 90%;
         font-size: 16px;
     }
 
