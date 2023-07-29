@@ -111,6 +111,7 @@ h6 {
 /* ================================================= */
 
 /* General styles for the slider */
+/* General styles for the slider */
 .slider {
     display: table;
     width: 100%;
@@ -242,7 +243,12 @@ h6 {
 /* Media query for mobile devices */
 @media (max-width: 767px) {
     .slider .carousel-item {
+        height: auto; /* Remove fixed height for mobile */
         background-size: cover; /* Reset background-size to cover for mobile devices */
+    }
+
+    .slider .carousel-background img {
+        height: 100%; /* Make sure images take the full height of the slider container */
     }
 
     .slider h2 {
