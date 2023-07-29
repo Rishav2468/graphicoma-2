@@ -240,6 +240,10 @@ h6 {
 
 /* Media query for mobile devices */
 @media (max-width: 767px) {
+    .slider .carousel-item {
+        background-size: contain;
+    }
+
     .slider h2 {
         font-size: 36px;
         margin-bottom: 20px;
