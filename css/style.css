@@ -110,11 +110,13 @@ h6 {
 /* ----------------- Intro Section ----------------- */
 /* ================================================= */
 
+/* General styles for the slider */
 .slider {
     display: table;
     width: 100%;
     height: 100vh;
     background: #000;
+    overflow: hidden; /* Prevent horizontal scrolling on mobile */
 }
 
 .slider .carousel-item {
@@ -123,6 +125,7 @@ h6 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .slider .carousel-item::before {
@@ -138,17 +141,8 @@ h6 {
 }
 
 .slider .carousel-container {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
     position: absolute;
     bottom: 0;
@@ -179,6 +173,7 @@ h6 {
     color: white;
 }
 
+/* Fade transition for the slider */
 .slider .carousel-fade {
     overflow: hidden;
 }
@@ -205,10 +200,10 @@ h6 {
 .slider .carousel-fade .carousel-inner .active.carousel-item-left,
 .slider .carousel-fade .carousel-inner .active.carousel-item-right {
     left: 0;
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
+/* Styles for carousel controls and indicators */
 .slider .carousel-control-prev,
 .slider .carousel-control-next {
     width: 10%;
@@ -225,6 +220,7 @@ h6 {
     cursor: pointer;
 }
 
+/* Button styles */
 .slider .btn-get-started {
     display: inline-block;
     padding: 10px 30px;
@@ -242,6 +238,35 @@ h6 {
     background: #ffffff;
     color: #1dbf73;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .slider .carousel-item {
+        height: 100%;
+        background-size: contain;
+        background-position: top; /* Adjust background position for better visibility */
+    }
+
+    .slider .carousel-content {
+        padding: 20px; /* Add some padding to the content to prevent it from being too close to the edges */
+    }
+
+    .slider h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .slider p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .slider .carousel-control-prev,
+    .slider .carousel-control-next {
+        width: 15%;
+    }
+}
+
 
 
 
