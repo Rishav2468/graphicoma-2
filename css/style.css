@@ -109,9 +109,6 @@ h6 {
 
 /* ----------------- Intro Section ----------------- */
 /* ================================================= */
-
-/* General styles for the slider */
-/* General styles for the slider */
 /* General styles for the slider */
 .slider {
     display: table;
@@ -246,33 +243,12 @@ h6 {
     .desktop-slider {
         display: none; /* Hide the desktop slider on mobile */
     }
+}
 
+/* Media query for desktop devices */
+@media (min-width: 768px) {
     .mobile-slider {
-        display: block; /* Show the mobile slider on mobile */
-    }
-
-    .slider .carousel-item {
-        height: auto; /* Remove fixed height for mobile */
-        background-size: cover; /* Reset background-size to cover for mobile devices */
-    }
-
-    .slider .carousel-background img {
-        height: 100%; /* Make sure images take the full height of the slider container */
-    }
-
-    .slider h2 {
-        font-size: 36px;
-        margin-bottom: 20px;
-    }
-
-    .slider p {
-        width: 90%;
-        font-size: 16px;
-    }
-
-    .slider .carousel-control-prev,
-    .slider .carousel-control-next {
-        width: 15%;
+        display: none; /* Hide the mobile slider on desktop */
     }
 }
 
