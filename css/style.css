@@ -933,6 +933,25 @@ ul {
     width: 120px;
 }
 
+
+
+
+/* Add wave effect animation to other icons if needed */
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Your existing CSS code... */
+
 /* ------------ Call To Action Section ------------- */
 /* .call-to-action {
     position: relative;
