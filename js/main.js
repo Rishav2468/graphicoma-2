@@ -289,3 +289,42 @@ function getStepActiveMarkerPosX(currentStep) {
 function getElementWidth(elem) {
     return elem.clientWidth;
 }
+
+// read more
+document.addEventListener("DOMContentLoaded", function () {
+    function toggleContent(button, content, lessButton) {
+      if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+        button.style.display = "none";
+        lessButton.style.display = "inline";
+      } else {
+        content.style.display = "none";
+        button.style.display = "inline";
+        lessButton.style.display = "none";
+        button.innerText = "Read More"; // Change the button text back to "Read More"
+      }
+    }
+  
+    function initializeReadMoreLess(moreButtonId, lessButtonId, contentId) {
+      const moreButton = document.getElementById(moreButtonId);
+      const lessButton = document.getElementById(lessButtonId);
+      const content = document.getElementById(contentId);
+  
+      moreButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        toggleContent(moreButton, content, lessButton);
+      });
+  
+      lessButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        toggleContent(lessButton, content, moreButton);
+      });
+    }
+  
+    // Initialize Read More/Read Less functionality for each section
+    initializeReadMoreLess("more1", "less1", "content1");
+    initializeReadMoreLess("more2", "less2", "content2");
+    initializeReadMoreLess("more3", "less3", "content3");
+    initializeReadMoreLess("more4", "less4", "content4");
+  });
+  

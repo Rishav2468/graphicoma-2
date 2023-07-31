@@ -627,9 +627,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .about .about-col h2 a:hover {
     color: linear-gradient(122deg, var(--color-accent-light) 0%, var(--color-accent-dark) 50%, var(--color-secondary) 100%);
-    ;
+    
 }
-
 .about .about-col p {
     font-size: 14px;
     font-weight: 400;
@@ -637,7 +636,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: #353535;
     margin-bottom: 0;
     padding: 0 30px;
+    text-align: justify; /* Add this line to justify the text */
 }
+
 
 .about .read-more {
     width: 100%;
