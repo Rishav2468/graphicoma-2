@@ -536,11 +536,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     position: absolute;
     display: block;
     width: 100px;
-    height: 0;
-    border-bottom: 4px dashed #353535;
-    bottom: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #00dbde, #ff0066); /* Gradient from #00dbde to #ff0066 */
+    bottom: -10px;
     left: calc(50% - 50px);
 }
+
 
 .section-header p {
     text-align: center;
@@ -679,6 +680,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 60px 0;
     min-height: 100vh;
 } */
+:root {
+    --color-primary: #00dbde;    /* Vibrant Blue-Green */
+    --color-secondary: #ff0066;  /* Bright Pink */
+    --color-accent-light: #8e44ad; /* Change this to a new accent color (e.g., purple) */
+    --color-accent-dark: #353535;  /* Dark Gray */
+  }
 a,
 a:hover,
 a:focus,
@@ -717,14 +724,14 @@ ul {
 }
 
 .site-heading h4::before {
-    background:var(--color-accent-light) none repeat scroll 0 0;
+    background: linear-gradient(90deg, #00dbde, #ff0066);
     bottom: 0;
     content: "";
-    height: 2px;
-    left: 50%;
-    margin-left: -25px;
+    width: 100px;
+    height: 4px;
+    left: calc(50% - 20px);
+    margin-left: -20px;
     position: absolute;
-    width: 50px;
 }
 
 .site-heading {

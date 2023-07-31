@@ -290,7 +290,7 @@ function getElementWidth(elem) {
     return elem.clientWidth;
 }
 
-// read more
+// js for toggle read more button 
 document.addEventListener("DOMContentLoaded", function () {
     function toggleContent(button, content, lessButton) {
       if (content.style.display === "none" || content.style.display === "") {
@@ -327,4 +327,5 @@ document.addEventListener("DOMContentLoaded", function () {
     initializeReadMoreLess("more3", "less3", "content3");
     initializeReadMoreLess("more4", "less4", "content4");
   });
+  
   
