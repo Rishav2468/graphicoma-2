@@ -1,9 +1,13 @@
 @import url(//cdn.rawgit.com/rtaibah/dubai-font-cdn/master/dubai-font.css);
 /* ------------------ General CSS ------------------ */
 body {
+  background: linear-gradient(180deg, #202020 0%, rgba(32, 32, 32, 0.2) 50%, #202020 100%),
+              url(../img/Website\ bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: #656565;
   font-family: "Montserrat", sans-serif;
-  background: #ffffff;
 }
 
 a {
@@ -1743,7 +1747,6 @@ body .test{
     height: auto;
     font-size: 16px;
     font-family: Dubai-Light;
-		background: rgba(30,30,30);
 }
 /* .testim {
 		width: 100%;
@@ -2759,18 +2762,16 @@ html {
   }
 }
 
-.main-contact {
+/* .main-contact {
   background: #202020;
-}
+} */
 
 .contact {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 98vw;
-  min-height: 100vh;
-  background: linear-gradient(180deg, #202020 0%, rgba(32, 32, 32, 0.2) 50%, #202020 100%),
-    url(../img/Website\ bg.jpg);
+  min-height: 70vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2789,7 +2790,7 @@ html {
   border: 1px solid #602dff;
   border-radius: 1rem;
   background: #252525;
-  max-width: 600px;
+  max-width: 800px;
   width: 100%;
 }
 
