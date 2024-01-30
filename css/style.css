@@ -2352,7 +2352,7 @@ body .test{
   --border-color-default: var(--color-secondary);
   --border-color-accent: var(--color-accent-dark);
 
-  --bg-color-default: #fff;
+  --bg-color-default: #e0dcdc;;
   --bg-color-dark: #2c2c2c;
   --bg-color-accent--lignt: var(--color-accent-light);
   --bg-color-accent--dark: var(--color-accent-dark);
@@ -2472,7 +2472,7 @@ main-one a {
 
 .timeline__icon {
   --timeline-icon-dimensions: 45px;
-
+  fill: white;
   position: relative;
   display: block;
   width: var(--timeline-icon-dimensions);
@@ -2508,7 +2508,7 @@ main-one a {
   padding-top: 30px;
   margin-bottom: 0;
   text-align: center;
-  line-height: 1.7;
+  line-height: 1.5;
   border-top: var(--step-border-width) solid var(--border-color-default);
 }
 
@@ -2602,11 +2602,13 @@ main-one a {
 .timeline__step.is-active .timeline__icon--default,
 .timeline__step:not(.is-active):hover .timeline__icon--default {
   opacity: 0;
+
 }
 
 .timeline__step.is-active .timeline__icon--active,
 .timeline__step:not(.is-active):hover .timeline__icon--active {
   opacity: 1;
+  
 }
 
 .timeline__slides {
