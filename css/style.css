@@ -71,8 +71,10 @@ h6 {
 
 /* ------------------ Header CSS ------------------- */
 .header {
-  padding: 30px 0;
-  height: 92px;
+  padding: 30px 50px;
+  background: rgb(16, 16, 16);
+
+  height: 65px;
   position: fixed;
   left: 0;
   top: 0;
@@ -82,15 +84,15 @@ h6 {
 }
 
 .header.header-scrolled {
-  background: white;
-  padding: 20px 0;
-  height: 72px;
+  background: rgb(16, 16, 16);
+  padding: 30px 50px;
+  height: 65px;
   transition: all 0.3s;
 }
 
 .header .logo {
   float: left;
-  margin-top: -1.5%;
+  margin-top: -2%;
 }
 
 .header .logo h1 {
@@ -107,7 +109,7 @@ h6 {
 .header .logo img {
   padding: 0;
   margin: 0;
-  margin-left: 25%;
+  margin-left:4px 15%;
   height: auto;
   width: 80%;
   object-fit: cover;
@@ -144,14 +146,14 @@ h6 {
 .slider {
   display: table;
   width: 100%;
-  height: 100vh;
+  height: 92vh;
   background: #000;
   overflow: hidden; /* Prevent horizontal scrolling on mobile */
 }
 
 .slider .carousel-item {
   width: 100%;
-  height: 100vh;
+  height: 92vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -285,8 +287,8 @@ h6 {
 
 /* ------------------ Menu Style ------------------- */
 #nav-menu-container {
-  float: right;
-  margin: 0;
+  float: left;
+  margin: -13px;
 }
 
 .nav-menu,
@@ -330,7 +332,7 @@ h6 {
 .nav-menu a {
   display: inline-block;
   padding: 0 8px 10px 8px;
-  color: rgb(163, 00, 202);
+  color: rgb(252, 252, 252);
   font-family: "Nunito", sans-serif;
   font-weight: 1000;
   font-size: 12px;
@@ -341,7 +343,7 @@ h6 {
 
 .nav-menu li:hover > a,
 .nav-menu > .menu-active > a {
-  color: #1dbf73;
+  color: yellow;
 }
 
 .nav-menu > li {
@@ -375,6 +377,74 @@ h6 {
 .nav-menu ul ul {
   margin: 0;
 }
+/* Add the following styles at the end of your existing CSS */
+
+/* Add the following styles at the end of your existing CSS */
+/* 
+body .additional-menu {
+	display: flex;
+	height: 100vh;
+
+	align-items: center;
+	justify-content: center;
+} */
+
+
+.search-box {
+  position: absolute;
+  top: 20%;
+  left: 80%;
+  transform: translate(-90%, -5%);
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  z-index: 2;
+}
+
+.search-box:hover > .search-text {
+  width: 200px;
+  padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+  background: white;
+  color: black;
+}
+
+.search-btn {
+  color: #e84118;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.search-btn > i {
+  font-size: 15px;
+}
+
+.search-text {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+
+
 
 #mobile-nav-toggle {
   position: fixed;
@@ -1197,7 +1267,7 @@ button {
 }
 .logo {
   display: block;
-  width: 200px;
+  width: 150px;
   margin: auto;
   padding-bottom: 40px;
 }
@@ -3093,6 +3163,9 @@ body .footer .content {
   /* .header .logo {
     padding-left: 60px;
   } */
+  .slider {
+    margin-top: 65px; /* Adjust this value based on your header height */
+  }
 
   .slider p {
     width: 60%;
