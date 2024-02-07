@@ -52,7 +52,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #1dbf73;
+  background: rgb(37, 237, 255);
   color: #ffffff;
   width: 45px;
   height: 45px;
@@ -124,7 +124,7 @@ h6 {
 }
 @media (max-width: 769px) {
   .header .logo {
-    margin-top: -5%;
+    margin-top: -7%;
     margin-left: -5%;
   }
   .header .logo img {
@@ -133,7 +133,7 @@ h6 {
 }
 @media (max-width: 550px) {
   .header .logo {
-    margin-top: -3%;
+    margin-top: -8%;
     margin-left: -10%;
   }
   .header .logo img {
@@ -2523,7 +2523,9 @@ main-one a {
 /* .content {
     margin: 50px auto;
 } */
-
+.timeline__step-title{
+  color: #eae9e9;
+}
 .content__title {
   margin-bottom: 80px;
   font-size: var(--font-size-lg);
@@ -2795,11 +2797,12 @@ main-one a {
 /* ------------------ Clients Style ---------------- */
 .clients {
   padding: 60px 0;
-  background-color: white;
+  background-color: transparent;
 }
 
 .clients .section-header p {
   padding-bottom: 10px;
+  color: white;
 }
 
 .clients img {
@@ -2829,7 +2832,10 @@ main-one a {
 }
 
 .clients .owl-dot.active {
-  background-color: #1dbf73;
+  background-color: #ea830e;
+}
+.section-title-client{
+  color: white;
 }
 
 /* ----------------- Contact Style ----------------- */
