@@ -134,7 +134,7 @@ h6 {
 @media (max-width: 550px) {
   .header .logo {
     margin-top: -8%;
-    margin-left: -10%;
+    margin-left: -8%;
   }
   .header .logo img {
     width: 70%;
