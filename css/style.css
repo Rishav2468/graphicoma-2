@@ -444,8 +444,45 @@ body .additional-menu {
   width: 0px;
 }
 
+.desktop-only {
+  padding: 0.8em 2em;
+  background-color: #000;
+  border: 3px solid yellow;
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -5px 5px 0px 0px yellow;
+  position: fixed;
+  top: 5px;
+  right: 90px;
+}
+
+.desktop-only:hover {
+  transform: translate(5px, -5px);
+}
+/* Hide the Contact us button in mobile and tablet views */
+@media only screen and (max-width: 1024px) {
+  .desktop-only {
+      display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .search-box,
+  .search-btn{
+      display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #nav-menu-container .hide-contact {
+      display: none;
+  }
+}
 
 
+#nav-menu-container {
+  padding-right: 60px;
+}
 #mobile-nav-toggle {
   position: fixed;
   right: 0;
@@ -3176,9 +3213,7 @@ body .footer .content {
     width: 5%;
   }
 
-  #nav-menu-container {
-    padding-right: 60px;
-  }
+  
 }
 
 @media (max-width: 768px) {
