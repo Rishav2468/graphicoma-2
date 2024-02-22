@@ -625,15 +625,6 @@ $(function() {
 			pointsB[i].move();
 		}
 
-		// Create dynamic gradient
-		var gradientX = Math.min(Math.max(mouseX - $canvas.offset().left, 0), $canvas.width());
-		var gradientY = Math.min(Math.max(mouseY - $canvas.offset().top, 0), $canvas.height());
-		var distance = Math.sqrt(Math.pow(gradientX - $canvas.width()/2, 2) + Math.pow(gradientY - $canvas.height()/2, 2)) / Math.sqrt(Math.pow($canvas.width()/2, 2) + Math.pow($canvas.height()/2, 2));
-
-		var gradient = context.createRadialGradient(gradientX, gradientY, 300+(300*distance), gradientX, gradientY, 0);
-		gradient.addColorStop(0, '#102ce5');
-		gradient.addColorStop(1, '#E406D6');
-
 		// Draw shapes
 		var groups = [pointsA, pointsB]
 
@@ -729,3 +720,9 @@ nextP = points[0];
 	// Init
 	initButton();
 });
+
+
+
+
+
+// homepage banner js
