@@ -1086,7 +1086,7 @@ ul {
 
 .we-offer-area .item {
   flex: 1; /* This ensures each item takes equal space */
-  margin: 0 -30px; /* Adjust the margin as needed */
+  margin: 0 -8px; /* Adjust the margin as needed */
 }
 
 .we-offer-area.text-left .item i::after {
